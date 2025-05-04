@@ -1,0 +1,64 @@
+.container {
+    margin-left: 180px;
+    background-color: white;
+    /* max-width: 85vw; */
+    max-width: 85vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 15px;
+}
+
+.img {
+    width: 20px;
+    height:20px;
+    cursor: pointer;
+}
+
+.div {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.input {
+    width: 30vw;
+    height: 40px;
+    background-color: #EFF3F9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+
+.input::placeholder {
+    color: gray;
+}
+
+.searchIcon {
+    margin-left: -35px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.lastDiv {
+    display: flex;
+    gap: 15px;
+}
+
+.location {
+    cursor: pointer;
+    color: silver;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+.account {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

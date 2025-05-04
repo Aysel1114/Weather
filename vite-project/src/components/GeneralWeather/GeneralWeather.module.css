@@ -1,0 +1,99 @@
+.img {
+    width: 90px;
+    height: 90px;
+}
+
+.forecast {
+    display: flex;
+    width: 800px;
+    height: 200px;
+    padding: 16px;
+    background-color: #409AC7;
+    align-items: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.miniForecast {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.mainForecast {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    color: white;
+    border-radius: 15px;
+    margin-right: 10px;
+    width: 400px;
+}
+
+.desc {
+    font-weight: bold;
+    color: lightgray;
+}
+
+.desc2 {
+    color: gray;
+    font-size: 15px;
+}
+
+.degree {
+    font-size: 50px;
+    margin-top: -23px;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    display: none !important;
+}
+
+.swiperSlide {
+    font-size: 18px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.swiperContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.swiperMini1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.swiperMini2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.h6 {
+    font-size: 15px;
+}
+
+.h4 {
+    margin-bottom: 22px;
+    font-size: 30px;
+    color: #45474F;
+}

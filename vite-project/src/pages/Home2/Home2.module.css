@@ -1,0 +1,83 @@
+body {
+    background-color: #EFF3F9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 140px;
+    height: 140px;
+}
+
+.content {
+    margin: 120px 180px;
+    position: fixed;
+    max-height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstPart {
+    display: flex;
+    gap: 25px;
+}
+
+.right {
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+    height: 490px;
+    width: 29vw;
+}
+
+.button {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 12px 24px;
+    background-color: #409AC7;
+    background: linear-gradient(to right, #409AC7 50%, #A9A9A9 50%);
+    background-size: 200% 100%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-position 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-position: right center;
+}
+
+.clickIcon {
+    width: 20px;
+    height: 20px;
+    background-image: white;
+}
+
+.mySwiper2 {
+    /* width: 100%;
+    height: 100%; */
+    width: 805px;
+}
+  
+.swiperSlide2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5px;
+}

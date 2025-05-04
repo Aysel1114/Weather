@@ -1,0 +1,92 @@
+.mySwiper {
+    /* width: 100%; */
+    /* height: 100%; */
+    width: 85vw;
+    height: 280px;
+    position: relative;
+}
+  
+.swiperSlide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.swiperContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.conditionImg {
+    width: 50px;
+    height: 50px;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.insideHr {
+    width: 25px;
+    margin-left: -5px;
+    margin-right: -5px;
+    transform: rotate(90deg);
+}
+
+.miniInfo {
+    display: flex;
+    gap: 5px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.swiper-button-next {
+    right: -30px;
+}
+
+.swiper-button-prev {
+    left: -30px;
+}
+
+.conditionText {
+    font-size: 17px;
+}
+
+.desc {
+    font-size: 14px;
+}
+
+.temp {
+    font-size: 26px;
+    margin-top: -15px;
+}
+
+.h4 {
+    margin-bottom: 22px;
+    font-size: 30px;
+    color: #45474F;
+}

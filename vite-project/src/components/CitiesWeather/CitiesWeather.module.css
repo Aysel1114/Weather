@@ -1,0 +1,64 @@
+/* .container {
+    width: 90%;
+} */
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFF3F9;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cities {
+    /* width: 400px; */
+    max-width: 500px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.cityHeader {
+    margin-bottom: 22px;
+    font-size: 20px;
+    color: #45474F;
+    font-weight: bold;
+}
+
+.deleteButton {
+    border: none;
+    cursor: pointer;
+    margin-left: -50px;
+    padding-right: 5px;
+}
+
+.deleteImg {
+    width: 25px;
+}
+
+.inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    gap: 10px;
+}
+
+.p {
+    color: gray;
+    font-size: 13px;
+}
+
+.cardDesc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

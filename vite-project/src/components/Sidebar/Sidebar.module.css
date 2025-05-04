@@ -1,0 +1,42 @@
+.container {
+    width: 130px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-top: -80px;
+}
+
+.img {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.items {
+    margin-top: -80px;
+}
