@@ -36,7 +36,6 @@ app.post("/signup", (req, res) => {
   });
 });
 
-// Giriş əməliyyatı
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
