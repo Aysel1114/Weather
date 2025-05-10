@@ -40,10 +40,6 @@ export default function Sidebar({currentWeather}) {
                     <img className={css.icon} src = "https://i.postimg.cc/bwHXXsv1/maps.png" />
                     Map
                 </li>
-                <li className={css.item}>
-                    <img className={css.icon} src = "https://i.postimg.cc/FFMsNkh6/telephone.png" />
-                    Contact
-                </li>
             </ul>
         </div>
     </div>

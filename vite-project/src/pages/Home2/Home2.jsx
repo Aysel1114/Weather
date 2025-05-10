@@ -9,15 +9,17 @@ import 'swiper/css/bundle';
 import HourlySwiper from '../../components/HourlySwiper/HourlySwiper';
 import GeneralWeather from '../../components/GeneralWeather/GeneralWeather';
 import CitiesWeather from '../../components/CitiesWeather/CitiesWeather';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 export default function Home2() {
 
     const [search, setSearch] = useState("");
     const [result, setResult] = useState("Baku");
     const [favouriteCities, setFavouriteCities] = useState([]);
+    const [showSidebar, setShowSidebar] = useState(false);
 
     const [currentWeather, setCurrentWeather] = useState({ city: "Baku", country: "Azerbaijan" });
-    
+
 
     useEffect(() => {
         const storedCities = JSON.parse(localStorage.getItem("favouriteCities"));
@@ -55,27 +57,30 @@ export default function Home2() {
         setResult(search);
     };
 
-  return (
-    <div className={css.container}>
-        <div>
-            <Navbar2 /*search = {search}*/ setSearch = {setSearch}  onSearch={handleSearch}  result = {result} currentWeather = {currentWeather} onAddFavourite={handleAddFavourite} />
-        </div>
-        <div className={css.main}>
-            <Sidebar currentWeather={currentWeather} />
-        </div>
-        <div className={css.content}>
-            <div className={css.firstPart}>
-                <div className={css.left}>
-                    <GeneralWeather city = {result} onWeatherUpdate={setCurrentWeather} />
+    return (
+        <div className={css.container}>
+
+            <div className={css.navbar2}>
+                <Navbar2 /*search = {search}*/ setSearch={setSearch} onSearch={handleSearch} result={result} currentWeather={currentWeather} onAddFavourite={handleAddFavourite} />
+            </div>
+
+            <div className={css.main}>
+                <Sidebar currentWeather={currentWeather} />
+            </div>
+
+            <div className={css.content}>
+                <div className={css.firstPart}>
+                    <div className={css.left}>
+                        <GeneralWeather city={result} onWeatherUpdate={setCurrentWeather} />
+                    </div>
+                    <div className={css.right}>
+                        <CitiesWeather favouriteCities={favouriteCities} onRemoveFavourite={handleRemoveFavourite} setResult={setResult} />
+                    </div>
                 </div>
-                <div className={css.right}>
-                    <CitiesWeather favouriteCities={favouriteCities} onRemoveFavourite={handleRemoveFavourite} setResult={setResult} />
+                <div className={css.secondPart}>
+                    <HourlySwiper city={result} />
                 </div>
             </div>
-            <div className={css.secondPart}>
-                <HourlySwiper city = {result} />
-            </div>
         </div>
-    </div>
-  )
+    )
 }

@@ -94,3 +94,15 @@ a {
     overflow-y: scroll;
     scrollbar-width: none;
 }
+
+.navbar {
+    width: 100%;
+    max-width: 1500px;
+}
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        margin-left: 270px;
+    }
+}

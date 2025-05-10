@@ -86,7 +86,7 @@ export default function GeneralWeather({city, onWeatherUpdate }) {
                         <div className={css.swiperContainer}>
                             <div className={css.swiperMini1}>
                                 <img className={css.icon} src={day?.icon} />
-                                <div>{day?.temperature} <sup>o</sup></div>
+                                <div className={css.insideDivTemp}>{day?.temperature} <sup>o</sup></div>
                                 
                             </div>
                             <div className={css.swiperMini2}>
@@ -98,18 +98,20 @@ export default function GeneralWeather({city, onWeatherUpdate }) {
                 ))}
             </Swiper>
         </div>
-        <div>
-            <h4 className={css.h4}>Today's Highlights</h4>
-        </div>
-        <div>
-            <TodayWeatherInfo 
-                feelsLike = {currentWeather.feelsLike} 
-                uv = {currentWeather.uv}
-                cloud = {currentWeather.cloud}
-                humidity = {currentWeather.humidity}
-                visibility = {currentWeather.visibility}
-                wind = {currentWeather.wind}
-            />
+        <div className={css.todayForecast}>
+            <div>
+                <h4 className={css.h4}>Today's Highlights</h4>
+            </div>
+            <div>
+                <TodayWeatherInfo 
+                    feelsLike = {currentWeather.feelsLike} 
+                    uv = {currentWeather.uv}
+                    cloud = {currentWeather.cloud}
+                    humidity = {currentWeather.humidity}
+                    visibility = {currentWeather.visibility}
+                    wind = {currentWeather.wind}
+                />
+            </div>
         </div>
     </div> 
   )

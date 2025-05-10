@@ -5,7 +5,9 @@
 
 .forecast {
     display: flex;
-    width: 800px;
+    /* width: 800px; */
+    width: 100%;
+    max-width: 800px;
     height: 200px;
     padding: 16px;
     background-color: #409AC7;
@@ -69,7 +71,8 @@
 .swiperContainer {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    /* gap: 50px; */
+    gap: 40px;
 }
 
 .swiperMini1 {
@@ -96,4 +99,21 @@
     margin-bottom: 22px;
     font-size: 30px;
     color: #45474F;
+}
+
+.insideDivTemp {
+    font-size: 20px;
+    padding-right: 3px;
+}
+
+@media (max-width: 1200px) {
+    
+    .insideDivTemp {
+        font-size: 25px;
+    }
+
+    .swiperContainer {
+        gap: 50px;
+    }
+
 }
