@@ -5,7 +5,6 @@ export default function CitiesWeather({ favouriteCities, onRemoveFavourite, setR
 
     return (
         <div className={css.container}>
-            {/* <p className={css.cityHeader}>Other Cities</p> */}
             <div className={css.cities}>
                 <div className={css.inside}>
                     {favouriteCities.length === 0 ? (

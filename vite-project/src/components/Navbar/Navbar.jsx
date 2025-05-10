@@ -1,16 +1,8 @@
 import React from 'react'
 import css from './Navbar.module.css';
-import { useLocation, useNavigate } from 'react-router-dom';
 
 
 export default function Navbar() {
-
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const handleNavigate = () => {
-    navigate('/panelLogin');
-  }
 
   return (
     <div className = {css.container}>

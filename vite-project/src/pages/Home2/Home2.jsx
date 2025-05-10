@@ -2,21 +2,16 @@ import React, { useEffect, useState } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import css from './Home2.module.css';
 import Navbar2 from '../../components/Navbar2/Navbar2';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, FreeMode, Navigation, Pagination } from 'swiper/modules';
-import { useNavigate } from 'react-router';
 import 'swiper/css/bundle';
 import HourlySwiper from '../../components/HourlySwiper/HourlySwiper';
 import GeneralWeather from '../../components/GeneralWeather/GeneralWeather';
 import CitiesWeather from '../../components/CitiesWeather/CitiesWeather';
-import { GiHamburgerMenu } from 'react-icons/gi';
 
 export default function Home2() {
 
     const [search, setSearch] = useState("");
     const [result, setResult] = useState("Baku");
     const [favouriteCities, setFavouriteCities] = useState([]);
-    const [showSidebar, setShowSidebar] = useState(false);
 
     const [currentWeather, setCurrentWeather] = useState({ city: "Baku", country: "Azerbaijan" });
 
@@ -61,10 +56,10 @@ export default function Home2() {
         <div className={css.container}>
 
             <div className={css.navbar2}>
-                <Navbar2 /*search = {search}*/ setSearch={setSearch} onSearch={handleSearch} result={result} currentWeather={currentWeather} onAddFavourite={handleAddFavourite} />
+                <Navbar2 setSearch={setSearch} onSearch={handleSearch} result={result} currentWeather={currentWeather} onAddFavourite={handleAddFavourite} />
             </div>
 
-            <div className={css.main}>
+            <div className={`${css.main} hidden xl:block`}>
                 <Sidebar currentWeather={currentWeather} />
             </div>
 

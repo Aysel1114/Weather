@@ -40,3 +40,9 @@
 .items {
     margin-top: -80px;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    display: none;
+  }
+}

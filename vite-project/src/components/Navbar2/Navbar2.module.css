@@ -20,7 +20,6 @@
 
 .div {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -80,6 +79,41 @@
     overflow-y: auto;
     display: block;
     padding: 20px;
+}
+
+.hamburger {
+  font-size: 28px;
+  margin-right: 12px;
+  cursor: pointer;
+} 
+
+.dropdownMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 11%;
+    left: 59%;
+    width: 20%;
+    background-color: white;
+    z-index: 99;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.miniItem {
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.miniSidebar {
+    list-style: none;
 }
 
 @media (max-width: 1200px) {

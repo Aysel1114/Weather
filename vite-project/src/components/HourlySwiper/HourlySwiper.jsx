@@ -28,8 +28,6 @@ export default function HourlySwiper({city}) {
         .catch(error => console.error("Xəta baş verdi:", error));
     }, [city])
 
-    // console.log(hourlyUpdate);
-
   return (
     <div className={css.container}>
         <h4 className={css.h4}>Hourly Update</h4>

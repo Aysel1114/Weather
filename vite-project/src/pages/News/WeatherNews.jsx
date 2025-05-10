@@ -19,7 +19,6 @@ export default function WeatherNews() {
         fetch(url)
         .then(response => response.json())
         .then(data => {
-            // console.log(data);
             if (data.status === 'ok') {
                 const articles = data.articles;
     
@@ -44,8 +43,6 @@ export default function WeatherNews() {
         const date = new Date(dateString);
         return date.toLocaleDateString('en-GB', options);
     };
-
-    // console.log("data = " + data[1]?.title);
 
   return (
     <div className={css.container}>
@@ -103,7 +100,6 @@ export default function WeatherNews() {
                           <div className={css.lastPart}>
                             <div className={css.date}>
                               <img className={css.icon} src="https://i.postimg.cc/KvWWdtFK/calendar.png" alt="Calendar" />
-                              {/* <p>{article.publishedAt}</p> */}
                               <p>{formatDate(article.publishedAt)}</p>
                             </div>
                             <a href={article.url} target="_blank" rel="noopener noreferrer">

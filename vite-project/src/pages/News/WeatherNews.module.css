@@ -105,4 +105,8 @@ a {
     .navbar {
         margin-left: 270px;
     }
+
+    .container {
+        margin-left: -100px;
+    }
 }

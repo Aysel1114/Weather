@@ -37,7 +37,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* gap: 300px; */
     margin-top: 50px;
 }
 
@@ -84,9 +83,6 @@ body {
 }
 
 .mySwiper {
-    /* width: 240px;
-    height: 320px; */
-    /* text-align: center; */
     width: 350px;
     height: 450px;
 }
@@ -100,50 +96,28 @@ body {
     height: 100%;
 }
 
-.swiperSlide:nth-child(1n) {
+.swiperSlide:first-child {
   background-color: rgb(206, 17, 17);
 }
 
-.swiperSlide:nth-child(2n) {
+.swiperSlide:nth-child(2) {
   background-color: rgb(0, 140, 255);
 }
 
-.swiperSlide:nth-child(3n) {
+.swiperSlide:nth-child(3) {
   background-color: rgb(10, 184, 111);
 }
 
-.swiperSlide:nth-child(4n) {
+.swiperSlide:nth-child(4) {
   background-color: rgb(211, 122, 7);
 }
 
-.swiperSlide:nth-child(5n) {
+.swiperSlide:last-child {
   background-color: rgb(118, 163, 12);
 }
 
-.swiperSlide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
-}
-
-.swiperSlide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
-}
-
-.swiperSlide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
-}
-
-.swiperSlide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
-}
-
-.swiperSlide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
-}
-
 hr {
-    /* width: 100%; */
     width: 80%;
-    /* align-self: stretch; */
     border: 1px solid white;
     align-self: center;
     margin-top: 16px;
@@ -156,8 +130,6 @@ hr {
 } 
 
 .swiperImg {
-    /* width: 40px;
-    height: 40px; */
     width: 50px;
     height: 50px;
 }
@@ -168,7 +140,6 @@ hr {
     align-items: center;
     gap: 15px;
     font-size: 18px;
-    /* margin-top: 50px; */
     margin-top: 30px;
 }
 
@@ -197,12 +168,8 @@ hr {
 }
 
 .last {
-    /* width: 64px; */
     width: 70px;
     height: 137px;
-    /* padding-top: 10px;
-    padding-left: 8px;
-    padding-right: 8px; */
     background-image: linear-gradient(106deg, #1674cc, #FFC931);
     border-radius: 8px;
     display: flex;
@@ -223,7 +190,6 @@ hr {
   border-radius: 15px;
   text-align: center;
   max-width: 400px;
-  /* margin: 20; */
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -255,7 +221,6 @@ hr {
 }
 
 .signupButton {
-  /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
   background-image: linear-gradient(106deg, #1674cc, #FFC931);;
   border: none;
   color: white;

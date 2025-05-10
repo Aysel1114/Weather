@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import css from './Home.module.css';
 import Navbar from '../../components/Navbar/Navbar';
-// import { Swiper } from 'swiper';
 import { Swiper } from 'swiper/react';
 import { SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
@@ -44,10 +43,6 @@ export default function Home() {
     
         Promise.all(requests).then((results) => setWeatherData(results));
     }, []);
-
-    const handleNavigate = () => {
-        navigate('/panelLogin');
-    }
 
     const handleLogin = () => {
         navigate('/login');

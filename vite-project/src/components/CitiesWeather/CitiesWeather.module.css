@@ -10,7 +10,6 @@
 }
 
 .cities {
-    /* width: 400px; */
     max-width: 500px;
     max-height: 400px;
     display: flex;
@@ -31,7 +30,6 @@
 .deleteButton {
     border: none;
     cursor: pointer;
-    /* margin-left: -50px; */
     padding-right: 5px;
 }
 
@@ -44,7 +42,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 30vw; */
     width: 100%;
     gap: 10px;
 
